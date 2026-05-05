@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Morning Crumbs &mdash; Simple Sourdough</title>
+  <meta name="description" content="Morning Crumbs &mdash; small-batch sourdough loaves and handmade linen bread bags, baked and stitched with care." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Morning Crumbs &mdash; Simple Sourdough" />
+  <meta property="og:description" content="Small-batch sourdough loaves and handmade linen bread bags." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/morning-crumbs-logo-blue.png" />
+
+  <!-- Favicon (uses your logo once you add it) -->
+  <link rel="icon" type="image/png" href="assets/morning-crumbs-logo-blue.png" />
+
+  <!-- Google Fonts: Sacramento (script, mimics Vintage Goods) + Cormorant Garamond (serif body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Cormorant+Garamond:wght@300;400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a href="#home" class="nav-brand" aria-label="Morning Crumbs home">
+        <span class="nav-brand-script">Morning Crumbs</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">What I Make</a></li>
+        <li><a href="#contact">Order</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="hero-inner container">
+      <div class="hero-logo">
+        <!-- Drop your logo file in: assets/morning-crumbs-logo-blue.png and it'll replace this placeholder -->
+        <img src="assets/morning-crumbs-logo-blue.png"
+             alt="Morning Crumbs &mdash; Simple Sourdough, est. 2026"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="logo-placeholder" style="display:none;">
+          <span>Your logo<br/>goes here</span>
+        </div>
+      </div>
+      <p class="hero-tag">Small-batch sourdough &amp; handmade linen, baked and stitched with care.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Place an order</a>
+        <a href="#about" class="btn btn-ghost">Our story</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="about-photo">
+        <!-- Replace with assets/about-photo.jpg when ready (suggested ~800x1000px, portrait) -->
+        <div class="photo-placeholder photo-portrait">
+          <span>Your photo here</span>
+        </div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">Our Story</p>
+        <h2 class="section-title"><span class="script">A little about</span><br/>Morning Crumbs</h2>
+        <p>Morning Crumbs began in early 2026, in a small kitchen with a glass jar of starter and a whole lot of curiosity. What started as one quiet weekend bake has become a slow, joyful rhythm &mdash; flour on the counter, the hush of dough rising overnight, the crackle of a loaf cooling on the rack.</p>
+        <p>Alongside the bread, I sew linen bags to keep each loaf fresh the natural way. Every bag is cut, stitched, and pressed by hand from breathable linen &mdash; the way bakers have stored bread for generations.</p>
+        <p>Soon I&rsquo;ll be adding banneton covers and mason jar covers for fellow home bakers and starter-keepers. If there&rsquo;s something you&rsquo;d love to see, just ask &mdash; this little business grows with you.</p>
+        <p class="signature">&mdash; Adriana</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT I MAKE ============ -->
+  <section id="products" class="products">
+    <div class="container">
+      <p class="eyebrow center">What I Make</p>
+      <h2 class="section-title center"><span class="script">From oven</span><br/>and from thread</h2>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-photo">
+            <div class="photo-placeholder">
+              <span>Loaf photo</span>
+            </div>
+          </div>
+          <h3>Sourdough Loaves</h3>
+          <p>Slow-fermented country loaves with a crackly crust and an open, tender crumb. Baked fresh on order.</p>
+        </article>
+
+        <article class="product-card">
+          <div class="product-photo">
+            <div class="photo-placeholder">
+              <span>Bread bag photo</span>
+            </div>
+          </div>
+          <h3>Linen Bread Bags</h3>
+          <p>Hand-sewn from breathable linen, sized to fit a boule or batard. Keeps your loaf fresh, plastic-free.</p>
+        </article>
+
+        <article class="product-card">
+          <div class="product-photo">
+            <div class="photo-placeholder">
+              <span>Banneton cover</span>
+            </div>
+          </div>
+          <h3>Banneton Covers <span class="badge">Coming soon</span></h3>
+          <p>Soft linen covers for proofing baskets &mdash; for the home bakers who love a tidy rise.</p>
+        </article>
+
+        <article class="product-card">
+          <div class="product-photo">
+            <div class="photo-placeholder">
+              <span>Jar cover</span>
+            </div>
+          </div>
+          <h3>Mason Jar Covers <span class="badge">Coming soon</span></h3>
+          <p>Sweet little linen tops for your starter jar &mdash; breathable, washable, and tied with twine.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / ORDER ============ -->
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <div class="contact-copy">
+        <p class="eyebrow">Get in Touch</p>
+        <h2 class="section-title"><span class="script">Place</span><br/>an order</h2>
+        <p>Send a note about what you&rsquo;d like &mdash; a loaf, a bread bag, or both &mdash; and I&rsquo;ll get back to you within a day to arrange pickup or shipping.</p>
+        <p>You can also reach me directly:</p>
+        <ul class="contact-links">
+          <li>
+            <a href="https://instagram.com/YOUR_HANDLE" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.26.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.7 3.7 0 0 1-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.26.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52 0-4.76.07-1.06.05-1.64.22-2.02.37-.5.2-.86.43-1.24.81a3.4 3.4 0 0 0-.81 1.24c-.15.38-.32.96-.37 2.02C2.74 8.48 2.73 8.85 2.73 12s0 3.52.07 4.76c.05 1.06.22 1.64.37 2.02.2.5.43.86.81 1.24.38.38.74.61 1.24.81.38.15.96.32 2.02.37 1.24.06 1.61.07 4.76.07s3.52 0 4.76-.07c1.06-.05 1.64-.22 2.02-.37.5-.2.86-.43 1.24-.81.38-.38.61-.74.81-1.24.15-.38.32-.96.37-2.02.06-1.24.07-1.61.07-4.76s0-3.52-.07-4.76c-.05-1.06-.22-1.64-.37-2.02a3.4 3.4 0 0 0-.81-1.24 3.4 3.4 0 0 0-1.24-.81c-.38-.15-.96-.32-2.02-.37C15.52 4.01 15.15 4 12 4zm0 3.05a4.95 4.95 0 1 1 0 9.9 4.95 4.95 0 0 1 0-9.9zm0 1.8a3.15 3.15 0 1 0 0 6.3 3.15 3.15 0 0 0 0-6.3zm5.16-.94a1.16 1.16 0 1 1 0-2.32 1.16 1.16 0 0 1 0 2.32z"/></svg>
+              <span>@YOUR_HANDLE on Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/YOUR_PAGE" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V14h2.7v8h3.4z"/></svg>
+              <span>Morning Crumbs on Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:hello@morningcrumbs.com">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M2 6.5C2 5.7 2.7 5 3.5 5h17c.8 0 1.5.7 1.5 1.5v11c0 .8-.7 1.5-1.5 1.5h-17C2.7 19 2 18.3 2 17.5v-11zm2 .8v.4l8 5 8-5v-.4H4zm16 2.5-7.5 4.7c-.3.2-.7.2-1 0L4 9.8v7.7h16V9.8z"/></svg>
+              <span>hello@morningcrumbs.com</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>
+          <span>Your name</span>
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <span>What would you like?</span>
+          <select name="interest">
+            <option value="loaf">Sourdough loaf</option>
+            <option value="bag">Linen bread bag</option>
+            <option value="loaf-and-bag">A loaf + bag</option>
+            <option value="banneton">Banneton cover (when available)</option>
+            <option value="jar">Mason jar cover (when available)</option>
+            <option value="other">Something else</option>
+          </select>
+        </label>
+        <label>
+          <span>Tell me more</span>
+          <textarea name="message" rows="4" placeholder="Quantity, pickup or shipping, any questions..." required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Send my order</button>
+        <p class="form-note">I&rsquo;ll reply within a day. Thank you for supporting a tiny kitchen!</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-script">Morning Crumbs</p>
+      <p class="footer-tag">Simple Sourdough &middot; est. 2026</p>
+      <p class="footer-meta">&copy; <span id="year"></span> Morning Crumbs. Baked with love.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    // Close menu on link click (mobile)
+    document.querySelectorAll('.nav-links a').forEach(a =>
+      a.addEventListener('click', () => links.classList.remove('open'))
+    );
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

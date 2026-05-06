@@ -33,7 +33,9 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#products">What I Make</a></li>
+        <li><a href="#products">Make</a></li>
+        <li><a href="tools.html">Use</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Order</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -69,17 +71,19 @@
   <section id="about" class="about">
     <div class="container about-grid">
       <div class="about-photo">
-        <!-- Replace with assets/about-photo.jpg when ready (suggested ~800x1000px, portrait) -->
-        <div class="photo-placeholder photo-portrait">
+        <img src="assets/about-photo.jpg"
+             alt="Adriana baking sourdough"
+             class="about-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="photo-placeholder photo-portrait" style="display:none;">
           <span>Your photo here</span>
         </div>
       </div>
       <div class="about-copy">
         <p class="eyebrow">Our Story</p>
         <h2 class="section-title"><span class="script">A little about</span><br/>Morning Crumbs</h2>
-        <p>Morning Crumbs began in early 2026, in a small kitchen with a glass jar of starter and a whole lot of curiosity. What started as one quiet weekend bake has become a slow, joyful rhythm &mdash; flour on the counter, the hush of dough rising overnight, the crackle of a loaf cooling on the rack.</p>
-        <p>Alongside the bread, I sew linen bags to keep each loaf fresh the natural way. Every bag is cut, stitched, and pressed by hand from breathable linen &mdash; the way bakers have stored bread for generations.</p>
-        <p>Soon I&rsquo;ll be adding banneton covers and mason jar covers for fellow home bakers and starter-keepers. If there&rsquo;s something you&rsquo;d love to see, just ask &mdash; this little business grows with you.</p>
+        <p>Morning Crumbs became official in April 2026, but the story really started in the spring of 2025, when my little guy was just learning to crawl. Like a lot of new moms, I loved being home with him &mdash; and I also needed something of my own to pour into. That&rsquo;s when my mom introduced me to sourdough. She handed me a jar of her starter, taught me her rhythms, and I was hooked. There was something about the slowness of it &mdash; the long rise, the patient shaping &mdash; that I could do with my baby in my arms.</p>
+        <p>What started as one quiet hobby has grown into something I never expected. I find so much joy in the act of baking &mdash; and just as much in hearing the way others enjoy my breads. Thank you for being part of it. I&rsquo;m so happy to bake for you and your family. And thank you to my favorite crumb makers, Kyle &amp; Louis.</p>
         <p class="signature">&mdash; Adriana</p>
       </div>
     </div>
@@ -91,11 +95,13 @@
       <p class="eyebrow center">What I Make</p>
       <h2 class="section-title center"><span class="script">From oven</span><br/>and from thread</h2>
 
-      <div class="product-grid">
+      <div class="product-grid product-grid-2">
         <article class="product-card">
           <div class="product-photo">
-            <div class="photo-placeholder">
-              <span>Loaf photo</span>
+            <!-- Drop your photo into assets/loaf.jpg to replace this placeholder -->
+            <img src="assets/loaf.jpg" alt="Sourdough loaf" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span>loaf.jpg</span>
             </div>
           </div>
           <h3>Sourdough Loaves</h3>
@@ -104,34 +110,76 @@
 
         <article class="product-card">
           <div class="product-photo">
-            <div class="photo-placeholder">
-              <span>Bread bag photo</span>
+            <!-- Drop your photo into assets/bread-bag.jpg to replace this placeholder -->
+            <img src="assets/bread-bag.jpg" alt="Linen bread bag" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <span>bread-bag.jpg</span>
             </div>
           </div>
           <h3>Linen Bread Bags</h3>
           <p>Hand-sewn from breathable linen, sized to fit a boule or batard. Keeps your loaf fresh, plastic-free.</p>
         </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <div class="photo-placeholder">
-              <span>Banneton cover</span>
-            </div>
-          </div>
-          <h3>Banneton Covers <span class="badge">Coming soon</span></h3>
-          <p>Soft linen covers for proofing baskets &mdash; for the home bakers who love a tidy rise.</p>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <div class="photo-placeholder">
-              <span>Jar cover</span>
-            </div>
-          </div>
-          <h3>Mason Jar Covers <span class="badge">Coming soon</span></h3>
-          <p>Sweet little linen tops for your starter jar &mdash; breathable, washable, and tied with twine.</p>
-        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT I USE (LINK TO AMAZON SHOP/IDEA LIST) ============ -->
+  <section id="tools" class="tools">
+    <div class="container">
+      <div class="tools-cta">
+        <p class="eyebrow">What I Use</p>
+        <h2 class="tools-cta-title"><span class="script">Interested in baking</span><br/>sourdough yourself?</h2>
+        <p class="tools-cta-text">I keep a little list of the tools I reach for on every bake day &mdash; the Dutch oven, the banneton, the bread lame, all the small things that make a difference.</p>
+        <!-- Replace YOUR_AMAZON_SHOP_URL with your Amazon Storefront or Idea List link -->
+        <a href="tools.html" class="btn btn-primary">View my favorite tools</a>
+        <p class="tools-cta-note">As an Amazon Associate I earn from qualifying purchases &mdash; thank you for supporting Morning Crumbs!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSTAGRAM GALLERY ============ -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <p class="eyebrow center">From the Kitchen</p>
+      <h2 class="section-title center"><span class="script">Lately on</span><br/>Instagram</h2>
+
+      <!--
+        Drop 6 photos into the assets folder named:
+          instagram-1.jpg, instagram-2.jpg, instagram-3.jpg,
+          instagram-4.jpg, instagram-5.jpg, instagram-6.jpg
+        They'll appear automatically. Each tile links to your Instagram.
+        Until they're added, a styled placeholder shows in their place.
+      -->
+      <div class="ig-placeholder-grid">
+        <a href="https://instagram.com/morningcrumbssourdough" target="_blank" rel="noopener" class="ig-tile">
+          <img src="assets/instagram-1.jpg" alt="Morning Crumbs Instagram" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div class="ig-icon"></div>
+        </a>
+        <a href="https://instagram.com/morningcrumbssourdough" target="_blank" rel="noopener" class="ig-tile">
+          <img src="assets/instagram-2.jpg" alt="Morning Crumbs Instagram" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div class="ig-icon"></div>
+        </a>
+        <a href="https://instagram.com/morningcrumbssourdough" target="_blank" rel="noopener" class="ig-tile">
+          <img src="assets/instagram-3.jpg" alt="Morning Crumbs Instagram" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div class="ig-icon"></div>
+        </a>
+        <a href="https://instagram.com/morningcrumbssourdough" target="_blank" rel="noopener" class="ig-tile">
+          <img src="assets/instagram-4.jpg" alt="Morning Crumbs Instagram" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div class="ig-icon"></div>
+        </a>
+        <a href="https://instagram.com/morningcrumbssourdough" target="_blank" rel="noopener" class="ig-tile">
+          <img src="assets/instagram-5.jpg" alt="Morning Crumbs Instagram" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div class="ig-icon"></div>
+        </a>
+        <a href="https://instagram.com/morningcrumbssourdough" target="_blank" rel="noopener" class="ig-tile">
+          <img src="assets/instagram-6.jpg" alt="Morning Crumbs Instagram" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div class="ig-icon"></div>
+        </a>
+      </div>
+
+      <p class="ig-follow">
+        <a href="https://instagram.com/morningcrumbssourdough" target="_blank" rel="noopener" class="btn btn-ghost">Follow on Instagram</a>
+      </p>
     </div>
   </section>
 
@@ -141,23 +189,29 @@
       <div class="contact-copy">
         <p class="eyebrow">Get in Touch</p>
         <h2 class="section-title"><span class="script">Place</span><br/>an order</h2>
-        <p>Send a note about what you&rsquo;d like &mdash; a loaf, a bread bag, or both &mdash; and I&rsquo;ll get back to you within a day to arrange pickup or shipping.</p>
+        <p>Send a note about what you&rsquo;d like and I&rsquo;ll get back to you within a day to arrange pickup or shipping.</p>
         <p>You can also reach me directly:</p>
         <ul class="contact-links">
           <li>
-            <a href="https://instagram.com/YOUR_HANDLE" target="_blank" rel="noopener">
+            <a href="https://instagram.com/morningcrumbssourdough" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.26.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.7 3.7 0 0 1-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.26.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52 0-4.76.07-1.06.05-1.64.22-2.02.37-.5.2-.86.43-1.24.81a3.4 3.4 0 0 0-.81 1.24c-.15.38-.32.96-.37 2.02C2.74 8.48 2.73 8.85 2.73 12s0 3.52.07 4.76c.05 1.06.22 1.64.37 2.02.2.5.43.86.81 1.24.38.38.74.61 1.24.81.38.15.96.32 2.02.37 1.24.06 1.61.07 4.76.07s3.52 0 4.76-.07c1.06-.05 1.64-.22 2.02-.37.5-.2.86-.43 1.24-.81.38-.38.61-.74.81-1.24.15-.38.32-.96.37-2.02.06-1.24.07-1.61.07-4.76s0-3.52-.07-4.76c-.05-1.06-.22-1.64-.37-2.02a3.4 3.4 0 0 0-.81-1.24 3.4 3.4 0 0 0-1.24-.81c-.38-.15-.96-.32-2.02-.37C15.52 4.01 15.15 4 12 4zm0 3.05a4.95 4.95 0 1 1 0 9.9 4.95 4.95 0 0 1 0-9.9zm0 1.8a3.15 3.15 0 1 0 0 6.3 3.15 3.15 0 0 0 0-6.3zm5.16-.94a1.16 1.16 0 1 1 0-2.32 1.16 1.16 0 0 1 0 2.32z"/></svg>
-              <span>@morningcrumbssourdough</span>
+              <span>@morningcrumbssourdough on Instagram</span>
             </a>
           </li>
           <li>
-            <a href="https://facebook.com/YOUR_PAGE" target="_blank" rel="noopener">
+            <a href="https://facebook.com/morningcrumbssourdough" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V14h2.7v8h3.4z"/></svg>
-              <span>Morning Crumbs Sourdough/span>
+              <span>Morning Crumbs on Facebook</span>
             </a>
           </li>
           <li>
-            <a href="mailto:hello@morningcrumbs.com">
+            <a href="https://www.youtube.com/channel/UCYYG9wvLgnEPWHG2cL1YgfA" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M23.5 7.2a3 3 0 0 0-2.1-2.1C19.5 4.5 12 4.5 12 4.5s-7.5 0-9.4.6a3 3 0 0 0-2.1 2.1C0 9.1 0 12 0 12s0 2.9.5 4.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-4.8.5-4.8s0-2.9-.5-4.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+              <span>Morning Crumbs Sourdough on YouTube</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:adri.dostine@gmail.com">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M2 6.5C2 5.7 2.7 5 3.5 5h17c.8 0 1.5.7 1.5 1.5v11c0 .8-.7 1.5-1.5 1.5h-17C2.7 19 2 18.3 2 17.5v-11zm2 .8v.4l8 5 8-5v-.4H4zm16 2.5-7.5 4.7c-.3.2-.7.2-1 0L4 9.8v7.7h16V9.8z"/></svg>
               <span>adri.dostine@gmail.com</span>
             </a>
@@ -180,8 +234,6 @@
             <option value="loaf">Sourdough loaf</option>
             <option value="bag">Linen bread bag</option>
             <option value="loaf-and-bag">A loaf + bag</option>
-            <option value="banneton">Banneton cover (when available)</option>
-            <option value="jar">Mason jar cover (when available)</option>
             <option value="other">Something else</option>
           </select>
         </label>
@@ -200,6 +252,30 @@
     <div class="container footer-inner">
       <p class="footer-script">Morning Crumbs</p>
       <p class="footer-tag">Simple Sourdough &middot; est. 2026</p>
+
+      <ul class="footer-socials" aria-label="Follow Morning Crumbs">
+        <li>
+          <a href="https://instagram.com/morningcrumbssourdough" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.26.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.7 3.7 0 0 1-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.26.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52 0-4.76.07-1.06.05-1.64.22-2.02.37-.5.2-.86.43-1.24.81a3.4 3.4 0 0 0-.81 1.24c-.15.38-.32.96-.37 2.02C2.74 8.48 2.73 8.85 2.73 12s0 3.52.07 4.76c.05 1.06.22 1.64.37 2.02.2.5.43.86.81 1.24.38.38.74.61 1.24.81.38.15.96.32 2.02.37 1.24.06 1.61.07 4.76.07s3.52 0 4.76-.07c1.06-.05 1.64-.22 2.02-.37.5-.2.86-.43 1.24-.81.38-.38.61-.74.81-1.24.15-.38.32-.96.37-2.02.06-1.24.07-1.61.07-4.76s0-3.52-.07-4.76c-.05-1.06-.22-1.64-.37-2.02a3.4 3.4 0 0 0-.81-1.24 3.4 3.4 0 0 0-1.24-.81c-.38-.15-.96-.32-2.02-.37C15.52 4.01 15.15 4 12 4zm0 3.05a4.95 4.95 0 1 1 0 9.9 4.95 4.95 0 0 1 0-9.9zm0 1.8a3.15 3.15 0 1 0 0 6.3 3.15 3.15 0 0 0 0-6.3zm5.16-.94a1.16 1.16 0 1 1 0-2.32 1.16 1.16 0 0 1 0 2.32z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com/morningcrumbssourdough" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V14h2.7v8h3.4z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCYYG9wvLgnEPWHG2cL1YgfA" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M23.5 7.2a3 3 0 0 0-2.1-2.1C19.5 4.5 12 4.5 12 4.5s-7.5 0-9.4.6a3 3 0 0 0-2.1 2.1C0 9.1 0 12 0 12s0 2.9.5 4.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-4.8.5-4.8s0-2.9-.5-4.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:adri.dostine@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M2 6.5C2 5.7 2.7 5 3.5 5h17c.8 0 1.5.7 1.5 1.5v11c0 .8-.7 1.5-1.5 1.5h-17C2.7 19 2 18.3 2 17.5v-11zm2 .8v.4l8 5 8-5v-.4H4zm16 2.5-7.5 4.7c-.3.2-.7.2-1 0L4 9.8v7.7h16V9.8z"/></svg>
+          </a>
+        </li>
+      </ul>
+
       <p class="footer-meta">&copy; <span id="year"></span> Morning Crumbs. Baked with love.</p>
     </div>
   </footer>

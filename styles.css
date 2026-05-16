@@ -349,7 +349,7 @@ section { padding: 110px 0; }
 }
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 28px;
 }
 .tool-card {
@@ -536,6 +536,26 @@ section { padding: 110px 0; }
 behold-widget {
   display: block;
   margin-top: 56px;
+}
+
+/* ---------- why sourdough ---------- */
+.why { background: var(--cream); }
+.why-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.why-inner p {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--ink);
+  margin: 0 0 18px;
+}
+.why-inner p em {
+  font-style: italic;
+  color: var(--blue);
+  font-weight: 500;
 }
 
 /* ---------- products ---------- */
@@ -749,9 +769,6 @@ behold-widget {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .tools-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .ig-placeholder-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
@@ -782,7 +799,7 @@ behold-widget {
     padding: 18px 28px;
   }
   .product-grid { grid-template-columns: 1fr; }
-  .tools-grid { grid-template-columns: 1fr; gap: 18px; }
+  .tools-grid { gap: 18px; }
   .ig-placeholder-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-form { padding: 24px; }
   .hero { min-height: 70vh; }

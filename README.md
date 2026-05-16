@@ -66,6 +66,23 @@ Submissions will land in your inbox. First time someone fills out the form, Form
 
 ---
 
+## Connect your Instagram feed (5 minutes — uses Behold.so free tier)
+
+The Gallery section currently shows six styled placeholder tiles. To replace them with your live Instagram photos that auto-update every time you post:
+
+1. Go to **[behold.so](https://behold.so)** and sign up (free, no credit card).
+2. Connect your Instagram account when prompted.
+3. Behold will give you a **widget ID** (a short code like `aBcD1234`).
+4. Open `index.html`, find the `INSTAGRAM GALLERY` section, and:
+   - **Delete** the entire `<div class="ig-placeholder-grid">...</div>` block (6 lines of `<div class="ig-tile">`).
+   - **Uncomment** the two lines below it (remove the `<!--` at the start and `-->` at the end), and replace `YOUR_WIDGET_ID` with your actual widget ID.
+
+That's it. Your latest Instagram posts will now show on the site, and they'll refresh automatically as you post new content.
+
+> Don't want to use Behold? You can also keep the placeholder grid and replace each tile manually with your favorite photos — just swap each `<div class="ig-tile">...</div>` for `<img src="assets/instagram-1.jpg" class="ig-tile" />`.
+
+---
+
 ## Host it for free on GitHub Pages
 
 1. Make a [GitHub account](https://github.com) if you don't have one.

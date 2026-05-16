@@ -186,7 +186,7 @@ a:hover { color: var(--blue); }
 /* ---------- hero ---------- */
 .hero {
   position: relative;
-  min-height: 88vh;
+  min-height: 72vh;
   display: flex;
   align-items: center;
   background:
@@ -198,8 +198,8 @@ a:hover { color: var(--blue); }
 .hero-inner {
   text-align: center;
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .hero-logo {
   max-width: 460px;
@@ -287,6 +287,12 @@ section { padding: 110px 0; }
   color: var(--blue);
   margin-top: 24px !important;
 }
+.dedication {
+  padding-left: 40px;
+  margin-top: 20px !important;
+  font-style: italic;
+  color: var(--ink-soft);
+}
 .photo-placeholder {
   background: linear-gradient(135deg, var(--tan) 0%, var(--tan-deep) 100%);
   border-radius: 6px;
@@ -314,13 +320,257 @@ section { padding: 110px 0; }
 .photo-placeholder span { position: relative; z-index: 1; }
 .photo-portrait { aspect-ratio: 4 / 5; }
 
+.about-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  display: block;
+}
+
+/* ---------- nav active state ---------- */
+.nav-links a.active { color: var(--blue); }
+.nav-links a.active::after { transform: scaleX(1); }
+
+/* ---------- tools.html: page header ---------- */
+.tools-header {
+  padding: 80px 0 40px;
+  background: var(--cream);
+}
+.tools-header .section-intro {
+  margin-top: 18px;
+}
+
+/* ---------- tools.html: full grid ---------- */
+.tools-page {
+  padding: 40px 0 110px;
+  background: var(--cream);
+}
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+}
+.tool-card {
+  background: var(--cream-soft);
+  padding: 18px 18px 24px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.tool-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+.tool-photo {
+  margin-bottom: 18px;
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+.tool-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.tool-photo .photo-placeholder { aspect-ratio: 1 / 1; }
+.tool-card h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--blue-deep);
+  margin: 0 0 8px;
+}
+.tool-card p {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  margin: 0 0 14px;
+  line-height: 1.55;
+  flex-grow: 1;
+}
+.tool-link {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-top: auto;
+}
+.tool-card:hover .tool-link { color: var(--blue-deep); }
+.affiliate-disclosure {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin: 56px auto 0;
+  max-width: 600px;
+}
+.back-link {
+  text-align: center;
+  margin: 36px 0 0;
+}
+.back-link a {
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.back-link a:hover { color: var(--blue); }
+
+/* ---------- index.html: tools / what i use (compact callout) ---------- */
+.tools {
+  background: var(--cream-soft);
+  padding: 70px 0;
+}
+.tools-cta {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+}
+.tools-cta-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  line-height: 1.2;
+  color: var(--blue-deep);
+  margin: 6px 0 16px;
+}
+.tools-cta-title .script {
+  font-size: 1.3em;
+  display: inline-block;
+  margin-bottom: -0.15em;
+}
+.tools-cta-text {
+  color: var(--ink-soft);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  margin: 0 0 26px;
+  line-height: 1.6;
+}
+.tools-cta-note {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  opacity: 0.75;
+  margin: 18px 0 0;
+  font-style: italic;
+}
+
+/* ---------- gallery / instagram ---------- */
+.gallery {
+  background: var(--cream-soft);
+}
+.ig-placeholder-grid {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.ig-tile {
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(135deg, var(--tan) 0%, var(--tan-deep) 100%);
+  border-radius: 6px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform .25s ease;
+}
+.ig-tile:hover { transform: translateY(-3px); }
+.ig-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.ig-tile::before {
+  content: '';
+  position: absolute;
+  inset: 14px;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 1;
+}
+.ig-icon {
+  display: none;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38px;
+  height: 38px;
+  border: 2px solid var(--cream);
+  border-radius: 9px;
+  opacity: 0.85;
+}
+.ig-icon::before {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  border: 2px solid var(--cream);
+  border-radius: 50%;
+}
+.ig-icon::after {
+  content: '';
+  position: absolute;
+  top: 5px; right: 5px;
+  width: 4px; height: 4px;
+  background: var(--cream);
+  border-radius: 50%;
+}
+.ig-follow {
+  text-align: center;
+  margin: 48px 0 0;
+}
+/* Behold.so widget styling override (when she enables it) */
+behold-widget {
+  display: block;
+  margin-top: 56px;
+}
+
+/* ---------- why sourdough ---------- */
+.why { background: var(--cream); }
+.why-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.why-inner p {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--ink);
+  margin: 0 0 18px;
+}
+.why-inner p em {
+  font-style: italic;
+  color: var(--blue);
+  font-weight: 500;
+}
+
 /* ---------- products ---------- */
-.products { background: var(--cream); }
+.products { background: var(--cream-soft); }
 .product-grid {
   margin-top: 56px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
+}
+.product-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .product-card {
   background: var(--cream-soft);
@@ -333,7 +583,18 @@ section { padding: 110px 0; }
   transform: translateY(-4px);
   box-shadow: var(--shadow);
 }
-.product-photo { margin-bottom: 22px; }
+.product-photo {
+  margin-bottom: 22px;
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+.product-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .product-card .photo-placeholder { aspect-ratio: 1 / 1; }
 .product-card h3 {
   font-family: var(--font-display);
@@ -465,6 +726,30 @@ section { padding: 110px 0; }
   opacity: 0.85;
   margin: 4px 0 24px;
 }
+.footer-socials {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 24px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+.footer-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(242, 234, 223, 0.12);
+  color: var(--cream);
+  transition: background .2s ease, transform .2s ease;
+}
+.footer-socials a:hover {
+  background: rgba(242, 234, 223, 0.25);
+  color: var(--cream);
+  transform: translateY(-2px);
+}
 .footer-meta {
   font-family: var(--font-body);
   font-size: 11px;
@@ -483,6 +768,10 @@ section { padding: 110px 0; }
   }
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .ig-placeholder-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
   }
 }
 
@@ -510,6 +799,8 @@ section { padding: 110px 0; }
     padding: 18px 28px;
   }
   .product-grid { grid-template-columns: 1fr; }
+  .tools-grid { gap: 18px; }
+  .ig-placeholder-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-form { padding: 24px; }
   .hero { min-height: 70vh; }
 }

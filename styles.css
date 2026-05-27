@@ -650,9 +650,42 @@ behold-widget {
   margin-left: 4px;
 }
 
-/* ---------- contact ---------- */
+/* ---------- contact / order ---------- */
 .contact {
   background: linear-gradient(180deg, var(--cream-soft) 0%, var(--cream) 100%);
+}
+.order-cta {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+}
+.order-cta-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0 0 36px;
+}
+.order-buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.order-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.order-cta-note {
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0;
 }
 .contact-grid {
   display: grid;

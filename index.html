@@ -32,8 +32,8 @@
       </a>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#products">Make</a></li>
         <li><a href="tools.html">Use</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Order</a></li>
@@ -67,44 +67,145 @@
     </div>
   </section>
 
-  <!-- ============ WHAT I MAKE ============ -->
-  <section id="products" class="products">
+  <!-- ============ MENU / PRICING ============ -->
+  <section id="menu" class="menu">
     <div class="container">
-      <p class="eyebrow center">What I Make</p>
-      <h2 class="section-title center"><span class="script">From oven</span><br/>and from thread</h2>
+      <p class="eyebrow center">The Menu</p>
+      <h2 class="section-title center"><span class="script">Loaves and linen,</span><br/>with love</h2>
 
-      <div class="product-grid product-grid-3">
-        <article class="product-card">
-          <div class="product-photo">
-            <img src="assets/loaf.jpg" alt="Sourdough loaf" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-            <div class="photo-placeholder" style="display:none;">
-              <span>loaf.jpg</span>
-            </div>
+      <!-- BREAD MENU -->
+      <h3 class="menu-subtitle"><span class="script">Sourdough</span> Loaves</h3>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-photo">
+            <img src="assets/menu-plain.jpg" alt="Plain sourdough loaf" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;"><span>menu-plain.jpg</span></div>
           </div>
-          <h3>Sourdough Loaves</h3>
-          <p>Slow-fermented country loaves with a crackly crust and an open, tender crumb. Baked fresh on order.</p>
+          <div class="menu-info">
+            <h4>Plain</h4>
+            <span class="menu-price">$10</span>
+          </div>
         </article>
 
-        <article class="product-card">
-          <div class="product-photo">
-            <img src="assets/bread-bag.jpg" alt="Linen bread bag" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-            <div class="photo-placeholder" style="display:none;">
-              <span>bread-bag.jpg</span>
-            </div>
+        <article class="menu-card">
+          <div class="menu-photo">
+            <img src="assets/menu-cinnamon-sugar.jpg" alt="Cinnamon sugar sourdough" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;"><span>menu-cinnamon-sugar.jpg</span></div>
           </div>
-          <h3>Linen Bread Bags</h3>
-          <p>Hand-sewn from breathable linen, sized to fit a boule or batard. Keeps your loaf fresh, plastic-free.</p>
+          <div class="menu-info">
+            <h4>Cinnamon Sugar</h4>
+            <span class="menu-price">$12</span>
+          </div>
         </article>
 
-        <article class="product-card">
-          <div class="product-photo">
-            <img src="assets/bowl-covers.jpg" alt="Cotton bowl covers" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-            <div class="photo-placeholder" style="display:none;">
-              <span>bowl-covers.jpg</span>
-            </div>
+        <article class="menu-card">
+          <div class="menu-photo">
+            <img src="assets/menu-jalapeno-cheddar.jpg" alt="Jalape&ntilde;o cheddar sourdough" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;"><span>menu-jalapeno-cheddar.jpg</span></div>
           </div>
-          <h3>Cotton Bowl Covers</h3>
-          <p>Hand-sewn floral cotton in sizes for mason jars, mixing bowls, and bannetons &mdash; round and oval. A pretty, reusable alternative to plastic wrap.</p>
+          <div class="menu-info">
+            <h4>Jalape&ntilde;o Cheddar</h4>
+            <span class="menu-price">$12</span>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-photo">
+            <img src="assets/menu-chocolate-chip.jpg" alt="Chocolate chip sourdough" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;"><span>menu-chocolate-chip.jpg</span></div>
+          </div>
+          <div class="menu-info">
+            <h4>Chocolate Chip</h4>
+            <span class="menu-price">$12</span>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-photo">
+            <img src="assets/menu-pink-bread.jpg" alt="Pink sourdough made with purple sweet potato powder" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;"><span>menu-pink-bread.jpg</span></div>
+          </div>
+          <div class="menu-info">
+            <h4>Pink Bread</h4>
+            <span class="menu-price">$12</span>
+          </div>
+        </article>
+      </div>
+
+      <p class="menu-note">Any flavors you&rsquo;re interested in that aren&rsquo;t listed here? Send me a message &mdash; I&rsquo;m happy to bake something new!</p>
+
+      <!-- DIVIDER -->
+      <div class="divider" aria-hidden="true">
+        <span class="divider-line"></span>
+        <svg class="divider-icon" viewBox="0 0 24 36" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+          <path d="M12 35 L12 14" stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round"/>
+          <ellipse cx="12" cy="3" rx="1.5" ry="3"/>
+          <ellipse cx="9" cy="8" rx="1.5" ry="3" transform="rotate(-25 9 8)"/>
+          <ellipse cx="9" cy="13" rx="1.5" ry="3" transform="rotate(-25 9 13)"/>
+          <ellipse cx="9" cy="18" rx="1.5" ry="3" transform="rotate(-25 9 18)"/>
+          <ellipse cx="15" cy="8" rx="1.5" ry="3" transform="rotate(25 15 8)"/>
+          <ellipse cx="15" cy="13" rx="1.5" ry="3" transform="rotate(25 15 13)"/>
+          <ellipse cx="15" cy="18" rx="1.5" ry="3" transform="rotate(25 15 18)"/>
+        </svg>
+        <span class="divider-line"></span>
+      </div>
+
+      <!-- SEWN GOODS MENU -->
+      <h3 class="menu-subtitle"><span class="script">Linen &amp;</span> Sewn Goods</h3>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-photo">
+            <img src="assets/menu-bread-bag.jpg" alt="Linen bread bag" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;"><span>menu-bread-bag.jpg</span></div>
+          </div>
+          <div class="menu-info">
+            <h4>Linen Bread Bag</h4>
+            <span class="menu-price">$14</span>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-photo">
+            <img src="assets/menu-bowl-cover-small.jpg" alt="Small cotton bowl cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;"><span>menu-bowl-cover-small.jpg</span></div>
+          </div>
+          <div class="menu-info">
+            <h4>Bowl Cover &mdash; Small</h4>
+            <span class="menu-price">$4</span>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-photo">
+            <img src="assets/menu-bowl-cover-medium.jpg" alt="Medium cotton bowl cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;"><span>menu-bowl-cover-medium.jpg</span></div>
+          </div>
+          <div class="menu-info">
+            <h4>Bowl Cover &mdash; Medium</h4>
+            <span class="menu-price">$8</span>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-photo">
+            <img src="assets/menu-bowl-cover-large.jpg" alt="Large cotton bowl cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;"><span>menu-bowl-cover-large.jpg</span></div>
+          </div>
+          <div class="menu-info">
+            <h4>Bowl Cover &mdash; Large</h4>
+            <span class="menu-price">$12</span>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-photo">
+            <img src="assets/menu-bowl-cover-oval.jpg" alt="Oval banneton cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;"><span>menu-bowl-cover-oval.jpg</span></div>
+          </div>
+          <div class="menu-info">
+            <h4>Oval Banneton Cover</h4>
+            <span class="menu-price">$8</span>
+          </div>
         </article>
       </div>
     </div>
